@@ -1,0 +1,1 @@
+reactMixin = require('react-mixin');
