@@ -60,20 +60,19 @@ class CounterComponent extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="button-wrap">
-          <div className="media-flex">
-            <button onClick={this.dispatchIncrement}
-                    className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-              Add
-            </button>
-            <button onClick={this.dispatchDecrement}
-                    className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
-              Subtract
-            </button>
 
-            <p> You've pressed the button {this.storeCount()} times.</p>
-          </div>
+      <div className="button-wrap">
+        <div className="media-flex">
+          <button onClick={this.dispatchIncrement}
+                  className="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+            Add
+          </button>
+          <button onClick={this.dispatchDecrement}
+                  className="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+            Subtract
+          </button>
+
+          <p> You've pressed the button {this.storeCount()} times.</p>
         </div>
       </div>
     )
